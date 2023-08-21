@@ -29,7 +29,7 @@
     <main class="bg-[#f8f8f8] mt-[-65px]">
       <!-- this is kitchenware section -->
         <section class="my-16 mx-24">
-            <h1 class="text-4xl font-semibold py-20 ">Kitchenware</h1>
+          <h1 class="text-4xl font-semibold py-20 ">Kitchenware</h1>
             <div class="flex flex-col lg:flex-row gap-10">
                 <div>
                     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 ">
@@ -96,10 +96,75 @@
                               
                             </div>
                           </div>
+                        
+                          <div class="card w-auto bg-base-100 shadow-xl">
+                            <figure class="px-10 pt-10 ">
+                              <div class="bg-[#f3f3f3] w-[300px] h-[200px]">
+                                <div class="flex justify-center items-center p-4">
+                                    <img src="images/prod4.png" alt="" class="rounded-xl " />
+                                </div>
+                              </div>
+                            </figure>
+                            <div class="rating justify-center  mt-5 ">
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-yellow-400" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-yellow-400" checked />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-yellow-400" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-yellow-400" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-yellow-400" />
+                              </div>
+                            <div class="card-body items-center text-center mt-[-20px]">
+                              <h2 class="font-bold text-2xl">Sports Back Cap</h2>
+                              <p class="text-[#979797] text-xl">49.00 TK</p>
+                              
+                            </div>
+                          </div>
+                        <div class="card w-auto bg-base-100 shadow-xl">
+                            <figure class="px-10 pt-10 ">
+                              <div class="bg-[#f3f3f3] w-[300px] h-[200px]">
+                                <div class="flex justify-center items-center p-4">
+                                    <img src="images/prod5.png" alt="" class="rounded-xl " />
+                                </div>
+                              </div>
+                            </figure>
+                            <div class="rating justify-center  mt-5 ">
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-yellow-400" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-yellow-400" checked />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-yellow-400" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-yellow-400" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-yellow-400" />
+                              </div>
+                            <div class="card-body items-center text-center mt-[-20px]">
+                              <h2 class="font-bold text-2xl">Full Jersey Set</h2>
+                              <p class="text-[#979797] text-xl">69.00 TK</p>
+                              
+                            </div>
+                          </div>
+                        <div class="card w-auto bg-base-100 shadow-xl">
+                            <figure class="px-10 pt-10 ">
+                              <div class="bg-[#f3f3f3] w-[300px] h-[200px]">
+                                <div class="flex justify-center items-center p-4">
+                                    <img src="images/prod6.png" alt="" class="rounded-xl " />
+                                </div>
+                              </div>
+                            </figure>
+                            <div class="rating justify-center  mt-5 ">
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-yellow-400" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-yellow-400" checked />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-yellow-400" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-yellow-400" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-yellow-400" />
+                              </div>
+                            <div class="card-body items-center text-center mt-[-20px]">
+                              <h2 class="font-bold text-2xl">Sports cates</h2>
+                              <p class="text-[#979797] text-xl">159.00 TK</p>
+                              
+                            </div>
+                          </div>
+      
         
                     </div>
                 </div>
-                
+                <!-- this is have coupon -->
                  <div class="bg-white p-4 w-[342px] h-[148px]">
                   <form>   
                       <h4 class=" font-bold my-2 ">Have Coupon?</h4>
@@ -111,13 +176,54 @@
                       </div>
                   </form>
 
+                  <div class="w-auto bg-base-100 p-5 shadow-xl rounded-lg mt-20 ">
+                    <div id="selected-items-name" class="selected-items-name">
+                        <h5 id="items-name" class="text-xl font-semibold"> </h5>
+                    </div>
+                    <div class="divider"></div>
+                    <h5 class="text-xl font-semibold "> Total price : <span id="" class="font-medium text-[#1111115b]">00
+                        </span>TK </h5>
+                    <h5 class="text-xl font-semibold "> Discount : <span id="" class="font-medium text-[#1111115b]">00
+                        </span>TK </h5>
+                    <h5 class="text-xl font-semibold "> Total : <span id="" class="font-medium text-[#1111115b]">00
+                        </span>TK
+                    </h5>
+          
+                    <div class="divider"></div>
+          
+                    <!-- showModal  -->
+                    <button class=" bg-[#E527B2] text-xl text-center font-semibold  text-white w-full py-4 rounded-lg"
+                        onclick="my_modal_1.showModal()" disabled>
+                        Make
+                        Purchase
+                    </button>
+          
+                    <dialog id="my_modal_1" class="modal">
+                        <form method="dialog" class="modal-box py-14 flex flex-col justify-center items-center gap-5">
+                            <img src="images/congo.png" alt="">
+                            <h3 class="text-5xl font-bold">Congratulations</h3>
+                            <p class=" text-center">Your Purchase the product</p>
+          
+                            <!-- button -->
+                            <!-- if there is a button in form, it will close the modal -->
+                            <button class="bg-[#E527B2] border-2 text-xl font-bold  py-4 px-7 rounded-lg text-white">
+                                Go Home
+                            </button>
+          
+                        </form>
+                    </dialog>
+                </div>
+                </div>
+                </div>
+              </div>
+
 
                 </div> 
             </div>
             
         </section>
         <!-- this is Sportswear section -->
-        <section class="my-16 mx-24">
+        <!-- <section class="my-16 mx-24">
             <h1 class="text-4xl font-semibold mb-8 mt-10">Sportswear</h1>
              <div class="flex flex-col lg:flex-row gap-10"> 
                 <div>
@@ -193,7 +299,7 @@
             
         </section>
         <!-- this is Furniture section -->
-        <section class="my-16 mx-24">
+        <!-- <section class="my-16 mx-24">
             <h1 class="text-4xl font-semibold mb-8 mt-10">Furniture</h1>
             <div class="flex flex-col lg:flex-row gap-10">
                 <div>
@@ -267,7 +373,7 @@
                
             </div>
             
-        </section>
+        </section> --> -->
         
 
 
