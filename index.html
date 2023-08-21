@@ -13,7 +13,7 @@
         <div class="hero min-h-screen bg-[#f9f6e2]">
             <div class="hero-content flex-col lg:flex-row-reverse">
               <img src="images/Summer 1.png" class="max-w-sm w-[708px] " />
-              <div class="w-[700px]">
+              <div class="md:w-[700px] lg:w-[700px]">
                 <p class="text-3xl font-medium text-center mb-11 ">---SALE FEVER---</p>
                 <h5 class="text-5xl font-bold text-center mb-20">Purchase TK 200 or <br>
                      above & get <span class="text-secondary">20% off</span></h5>
@@ -156,12 +156,12 @@
                                 </div>
                               </div>
                             </figure>
-                            <div class="rating justify-center  mt-5 ">
+                            <div class="rating justify-center mt-5">
                                 <input type="radio" name="rating-2" class="mask mask-star-2 bg-yellow-400" />
                                 <input type="radio" name="rating-2" class="mask mask-star-2 bg-yellow-400" checked />
                                 <input type="radio" name="rating-2" class="mask mask-star-2 bg-yellow-400" />
                                 <input type="radio" name="rating-2" class="mask mask-star-2 bg-yellow-400" />
-                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-yellow-400" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-yellow-400"/>
                               </div>
                               <h2 class="font-bold text-2xl text-center">Sports cates</h2>
                             <div class="card-body items-center text-center mt-[-20px]">
@@ -176,7 +176,7 @@
                     </div>
                 </div>
                 <!-- this is have coupon -->
-                 <div class="bg-white  w-[342px] h-[148px]">
+                 <div class="bg-white md:w-[342px] lg:w-[342px] h-[148px]">
                   <form class="p-4">   
                       <h4 class=" font-bold my-2 ">Have Coupon?</h4>
                       <div class="relative">
@@ -187,7 +187,7 @@
                       </div>
                   </form>
 
-                  <div class=" bg-base-100 p-4 rounded-lg mt-20 w-[342px] h-[416px]">
+                  <div class=" bg-base-100 p-4 rounded-lg mt-20 md:w-[342px] lg:w-[342px] ">
                     <div id="selected-items-name" class="selected-items-name">
                         <h5 id="items-name" class="text-xl font-semibold"> </h5>
                     </div>
@@ -202,7 +202,6 @@
           
                     <div class="divider"></div>
           
-                    <!-- showModal  -->
                     <button id="btn-purchase" class=" bg-[#E527B2] text-xl text-center font-semibold  text-white w-full py-4 rounded-lg"
                         onclick="my_modal_1.showModal()" disabled>
                         Make
@@ -214,9 +213,6 @@
                             <img src="images/congo.png" alt="">
                             <h3 class="text-5xl font-bold">Congratulations</h3>
                             <p class=" text-center">Your Purchase the product</p>
-          
-                            <!-- button -->
-                            <!-- if there is a button in form, it will close the modal -->
                             <button class="bg-[#E527B2] border-2 text-xl font-bold  py-4 px-7 rounded-lg text-white">
                                 Go Home
                             </button>

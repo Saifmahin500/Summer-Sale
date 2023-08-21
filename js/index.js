@@ -36,8 +36,8 @@ function handleClick(data){
             }
         }
     }
-    if (Total >= 200 && disc == true){
-        lastPrice = Total - discount;
+    if (total >= 200 && disc == true){
+        lastPrice = total - discount;
         discount.innerText = discount;
     }
 
